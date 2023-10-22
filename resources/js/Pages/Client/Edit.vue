@@ -32,8 +32,8 @@
                     <input type="number" placeholder="Credit Limit" class="block text-sm py-3 px-4 rounded-lg w-full border outline-none" />
                 </div>
                     <div class="text-center mt-6">
-                        <button class="py-3 w-64 text-xl text-white bg-blue-400 rounded-2xl">Update Client</button>
-                        <button class="ml-3 py-3 w-64 text-xl text-white bg-red-400 rounded-2xl">Cancel</button>
+                        <button class="py-3 w-64 text-xl text-white bg-green-400 rounded-2xl">Update Client</button>
+                        <button class="ml-3 py-3 w-64 text-xl text-white bg-red-600 rounded-2xl">Cancel</button>
 
                     </div>
             </div>

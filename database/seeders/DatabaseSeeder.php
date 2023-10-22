@@ -18,21 +18,21 @@ class DatabaseSeeder extends Seeder
         // \App\Models\User::factory(10)->create();
 
         \App\Models\User::factory()->create([
-            'name' => 'Test Admin',
+            'name' => 'Admin',
             'email' => 'admin@example.com',
-            'password' => bcrypt('password123')
+            'password' => bcrypt('Password123')
         ]);
 
         \App\Models\User::factory()->create([
-            'name' => 'Test Supervisor',
+            'name' => 'Supervisor',
             'email' => 'supervisor@example.com',
-            'password' => bcrypt('password123')
+            'password' => bcrypt('Password123')
         ]);
 
         \App\Models\User::factory()->create([
-            'name' => 'Test Cashier',
-            'email' => 'test@example.com',
-            'password' => bcrypt('password123')
+            'name' => 'Cashier',
+            'email' => 'cashier@example.com',
+            'password' => bcrypt('Password123')
         ]);
 
         $this->call(ProductSeeder::class);
