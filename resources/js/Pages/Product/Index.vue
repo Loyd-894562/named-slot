@@ -44,7 +44,7 @@
                     <table class="w-full border-collapse text-left text-sm " >
                         <thead class="" >
                         <tr>
-                            
+                            <th scope="col" class="px-6 py-4 font-medium ">Thumbnail</th>
                             <th scope="col" class="px-6 py-4 font-medium ">Brand</th>
                             <th scope="col" class="px-6 py-4 font-medium ">Name</th>
                             <th scope="col" class="px-6 py-4 font-medium ">Description</th>
@@ -56,6 +56,11 @@
                         </thead>
                         <tbody class="divide-y divide-gray-100 border-t border-gray-100" v-for="prod in products" :key="prod.id">
                         <tr class="hover:bg-gray-50">
+                            <th class="flex gap-3 px-6 py-4 font-normal ">
+                                <div class="relative h-10 w-10">
+                                    <img class="h-full w-full rounded-full object-cover object-center" :src="prod.thumbnail" alt="">
+                                </div>
+                            </th>
                            
                             <td class="px-6 py-4">{{ prod.brand }}</td>
                             <td class="px-6 py-4">{{ prod.name }}</td>

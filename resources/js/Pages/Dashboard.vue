@@ -21,5 +21,11 @@ const themeMode = inject('themeMode');
                 </div>
             </div>
         </div>
+
+        <Card>
+            <slot class="name-header">
+                Name
+            </slot>
+        </Card>
     </AuthenticatedLayout>
 </template>
